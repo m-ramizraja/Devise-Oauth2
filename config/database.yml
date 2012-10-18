@@ -10,3 +10,9 @@ development:
   database: google_auth
   pool: 5
   timeout: 5000
+
+production:
+  adapter: postgresql
+  database: google_auth
+  pool: 5
+  timeout: 5000
