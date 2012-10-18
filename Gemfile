@@ -12,6 +12,11 @@ gem 'heroku'
 
 gem 'mysql2'
 
+group :production do
+  gem 'pg'
+end
+
+
 
 gem 'json'
 gem 'devise'
