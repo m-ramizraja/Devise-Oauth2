@@ -11,7 +11,8 @@ class HomeController < ApplicationController
 
     agent = Mechanize.new
 
-    page = agent.get("http://localhost:3000/users/sign_in")
+    #page = agent.get("http://localhost:3000/users/sign_in")
+    page = agent.get("http://mysterious-scrubland-7912.herokuapp.com/users/sign_in")
     page = agent.click(page.link_with(:text => "Sign in with Google Oauth2"))
 
     form = page.forms.first
@@ -27,7 +28,8 @@ class HomeController < ApplicationController
   def twitter_scrap
     agent = Mechanize.new
 
-    page = agent.get("http://localhost:3000/users/sign_in")
+    #page = agent.get("http://localhost:3000/users/sign_in")
+    page = agent.get("http://mysterious-scrubland-7912.herokuapp.com/users/sign_in")
     page = agent.click(page.link_with(:text => "Sign in with Twitter"))
     form = page.forms.first
     form['session[username_or_email]'] = "ramizraja97 "
