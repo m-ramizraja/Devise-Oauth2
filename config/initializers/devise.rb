@@ -7,7 +7,7 @@ Devise.setup do |config|
   # note that it will be overwritten if you use your own mailer class with default "from" parameter.
   config.mailer_sender = "please-change-me-at-config-initializers-devise@example.com"
   config.omniauth :google_oauth2, "852909950040.apps.googleusercontent.com", "hRCoxRONkXtNZ68ZwHKblHYB", { access_type: "offline", approval_prompt: "" }
-  config.omniauth :twitter, "852909950040.apps.googleusercontent.com", "hRCoxRONkXtNZ68ZwHKblHYB", { access_type: "offline", approval_prompt: "" }
+  config.omniauth :twitter, "ueR7Ty4l8wFfRfLypYQ", "gaTqpkA0Moo4zMpQWmbfXsKobdXxHmLJMVyhEHC2pE", { access_type: "offline", approval_prompt: "" }
 
   # Configure the class responsible to send e-mails.
   # config.mailer = "Devise::Mailer"

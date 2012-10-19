@@ -4,7 +4,8 @@ AuthWithGoogle::Application.routes.draw do
   end
 
   get "home/index"
-  get "home/scraped_data"
+  get "home/google_scrap"
+  get "home/twitter_scrap"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
