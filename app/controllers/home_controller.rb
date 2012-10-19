@@ -17,7 +17,7 @@ class HomeController < ApplicationController
 
     form = page.forms.first
     form['Email'] = "ramiz.raja@tkxel.com"
-    form['Passwd'] = "ramiz123$_"
+    form['Passwd'] = ""
     page = form.submit
     form = page.forms.first
     btn = form.button_with(:name =>"true")
@@ -33,7 +33,7 @@ class HomeController < ApplicationController
     page = agent.click(page.link_with(:text => "Sign in with Twitter"))
     form = page.forms.first
     form['session[username_or_email]'] = "ramizraja97 "
-    form['session[password]'] = "!2jukjoy"
+    form['session[password]'] = ""
     page = form.submit
 
     @page = agent.click(page.link_with(:text => "click here to continue"))
